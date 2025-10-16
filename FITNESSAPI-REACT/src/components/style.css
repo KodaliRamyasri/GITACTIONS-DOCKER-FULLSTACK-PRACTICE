@@ -1,0 +1,243 @@
+/* Container */
+.fitness-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f7f7f7, #e0e7ff); /* subtle gradient */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+
+/* Titles */
+h2, h3 {
+  text-align: center;
+  color: #2C3E50;
+  margin-bottom: 20px;
+}
+
+/* Message Banner */
+.message {
+  text-align: center;
+  padding: 14px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.success { background-color: #DFF6DD; color: #1B5E20; }
+.error { background-color: #FDE2E1; color: #B71C1C; }
+
+/* Form Section */
+.form-section {
+  margin: 25px 0;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* Form Grid with more spacing */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px; /* Increased gap between input fields */
+  margin-top: 25px;
+}
+
+.form-grid input, .form-grid select {
+  padding: 14px; /* Increased padding inside inputs */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Amazon-inspired buttons */
+.btn-primary { background-color: #FF6F3C; } /* Orange */
+.btn-success { background-color: #17C3B2; } /* Aqua */
+.btn-secondary { background-color: #7F8C8D; } /* Grey */
+.btn-danger { background-color: #FFC300; color: #2C3E50; } /* Yellow */
+
+/* Form Buttons */
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Fetch Section */
+.fetch-section {
+  margin: 25px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.fetch-section input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 220px;
+}
+
+/* User Cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.user-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Header */
+.user-card h4 {
+  margin: 0;
+  color: #2C3E50;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+/* Card Info */
+.user-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Card Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 12px; /* more spacing between buttons */
+  margin-top: 12px;
+  justify-content: flex-end;
+}
+
+.table-section {
+  margin: 30px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.table-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2C3E50;
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-section th, .table-section td {
+  padding: 12px 15px; /* spacing inside cells */
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #333;
+}
+
+.table-section th {
+  background-color: #2C3E50; /* Midnight Blue header */
+  color: #fff;
+  font-weight: 600;
+}
+
+.table-section tbody tr:hover {
+  background-color: #f1f7ff; /* subtle hover effect */
+}
+
+.table-section td button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 8px; /* space between Edit and Delete */
+  transition: all 0.2s;
+}
+
+.table-section td button:hover {
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background-color: #17C3B2; /* Bright Aqua */
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #FF6F3C; /* Vibrant Orange */
+  color: #fff;
+}
+
+/* Optional: Responsive Table Scroll */
+@media (max-width: 768px) {
+  .table-section table, .table-section thead, .table-section tbody, .table-section th, .table-section td, .table-section tr {
+    display: block;
+  }
+  
+  .table-section thead tr {
+    display: none;
+  }
+  
+  .table-section td {
+    position: relative;
+    padding-left: 50%;
+    margin-bottom: 12px;
+  }
+  
+  .table-section td::before {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: 600;
+    content: attr(data-label);
+    color: #2C3E50;
+  }
+}
+
