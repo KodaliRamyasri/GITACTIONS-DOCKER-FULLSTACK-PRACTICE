@@ -22,7 +22,7 @@ services:
     image: kodaliramyasri/fitness-backend:latest
     container_name: springboot
     ports:
-      - "2025:2050"
+      - "2050:2050"
     depends_on:
       - mysqldb
     restart: on-failure
