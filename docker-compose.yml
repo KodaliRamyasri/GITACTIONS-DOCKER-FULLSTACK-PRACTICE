@@ -33,7 +33,7 @@ services:
     image: kodaliramyasri/docker-frontend:latest
     container_name: react
     ports:
-      - "3000:80"
+      - "3020:80"
     depends_on:
       - backend
     restart: on-failure
